@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Yclone Design Insights</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">YCLONE</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html" class="btn-outline">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <header class="blog-hero">
+        <div class="container">
+            <span class="hero-tag">Design Insights</span>
+            <h1 class="hero-title">Thoughts on <span class="accent">Design</span> & Culture</h1>
+            <p class="hero-subtitle">Tutorials, industry trends, and deep dives into the creative process.</p>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-layout">
+                
+                <!-- Main Content -->
+                <main class="blog-main">
+                    <!-- Featured Post (Static for prominence) -->
+                    <article class="featured-post">
+                        <div class="featured-image">
+                            <img src="assets/images/blog/featured.jpg" alt="Minimalism in 2024" onerror="this.src='https://via.placeholder.com/800x400/2563eb/ffffff?text=Featured+Post'">
+                            <span class="category-badge">Design Trends</span>
+                        </div>
+                        <div class="featured-content">
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar"></i> January 15, 2026</span>
+                                <span><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                            <h2>The Evolution of Minimalism in Modern Graphic Design</h2>
+                            <p>How minimal design principles are shaping user experiences and brand identities in 2024. It's no longer just about less is more—it's about clarity and purpose.</p>
+                            <a href="blog-post.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Dynamic Posts Container -->
+                    <div id="posts-container" class="posts-grid">
+                        <!-- Posts will be injected here by JS -->
+                        <div class="loading-state">
+                            <i class="fas fa-circle-notch fa-spin"></i> Loading articles...
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <!-- Pagination injected by JS -->
+                    </div>
+                </main>
+
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Search</h3>
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search articles...">
+                            <button id="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul class="categories-list">
+                            <li><button class="category-btn active" data-category="all">All Articles</button></li>
+                            <li><button class="category-btn" data-category="trends">Design Trends</button></li>
+                            <li><button class="category-btn" data-category="typography">Typography</button></li>
+                            <li><button class="category-btn" data-category="branding">Branding</button></li>
+                            <li><button class="category-btn" data-category="tutorials">Tutorials</button></li>
+                            <li><button class="category-btn" data-category="business">Business</button></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="sidebar-widget newsletter-widget">
+                        <h3 class="widget-title">Join the Newsletter</h3>
+                        <p>Get the latest design resources delivered to your inbox weekly.</p>
+                        <form id="sidebar-newsletter">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Popular Tags</h3>
+                        <div class="tags-cloud">
+                            <a href="#" class="tag">#uiux</a>
+                            <a href="#" class="tag">#minimalism</a>
+                            <a href="#" class="tag">#color</a>
+                            <a href="#" class="tag">#freelance</a>
+                            <a href="#" class="tag">#tools</a>
+                            <a href="#" class="tag">#inspiration</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>YCLONE</h3>
+                    <p>Visual Stories, Masterfully Crafted</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/nti-isaac-aa5632368?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/yclone_designs?igsh=MWl3amVyYmVyMHYyaA=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61571324127681"><i class="fab fa-facebook"></i></a>
+                    
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Yclone by Nti Isaac Kwasi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/blog.js"></script>
+</body>
+</html>

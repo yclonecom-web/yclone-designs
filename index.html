@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yclone | Graphic Design Studio</title>
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Mobile Menu Toggle (Visible only on mobile) -->
+    <div class="mobile-menu-toggle" id="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Overlay for Mobile Sidebar -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Minimal Sidebar Navigation -->
+    <aside class="sidebar-nav" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <h2 style="color: var(--primary); font-size: 1.5rem; margin:0;">YCLONE</h2>
+            </div>
+            <button class="sidebar-close" id="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="profile-image">
+                <!-- Using placeholder if image missing, otherwise your asset -->
+                <img src="assets/images/designer2.png" onerror="this.src='https://via.placeholder.com/80?text=NK'" alt="Nti Isaac Kwasi">
+            </div>
+            <div class="profile-info">
+                <h3>Nti Isaac Kwasi</h3>
+                <p>Graphic Designer</p>
+            </div>
+        </div>
+
+        <nav class="sidebar-menu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="services.html" class="nav-link"><i class="fas fa-layer-group"></i> Services</a></li>
+                <li><a href="portfolio.html" class="nav-link"><i class="fas fa-image"></i> Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nti-isaac-aa5632368?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/yclone_designs?igsh=MWl3amVyYmVyMHYyaA==" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.behance.net/ntiisaackwasi" class="social-icon"><i class="fab fa-behance"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        
+        <!-- Desktop Navbar -->
+        <nav class="top-navbar">
+            <div class="container">
+                <div class="nav-left">
+                    <button class="sidebar-toggle" id="desktop-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="index.html" class="nav-logo">YCLONE</a>
+                </div>
+                <div class="nav-right">
+                    <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">
+                        Let's Talk
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">Available for Projects</span>
+                    <h1 class="hero-title">Visual Stories, <span class="text-accent">Masterfully</span> Crafted</h1>
+                    <p class="hero-subtitle">
+                        Transforming complex ideas into compelling visual experiences. 
+                        Specializing in brand identity, social media, and digital art.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                        <a href="contact.html" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Years</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="assets/images/hero-design.jpg" onerror="this.src='https://via.placeholder.com/600x700/f8f9fa/cccccc?text=Hero+Image'" alt="Featured Design">
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="image-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Top Rated Designer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="section-padding" id="featured">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Selected Works</h2>
+                    <p class="section-subtitle">A curated selection of my most recent design projects.</p>
+                </div>
+                
+                <!-- JS will populate this, or it will fall back to static -->
+                <div class="featured-grid" id="featured-projects"></div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="portfolio.html" class="btn btn-outline">View All Projects <i class="fas fa-arrow-right" style="margin-left: 5px; font-size: 0.8rem;"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section-padding" style="background-color: var(--bg-light);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Expertise</h2>
+                    <p class="section-subtitle">Comprehensive design solutions tailored to your needs.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Brand Identity</h3>
+                        <p class="text-muted">Logo design, color palettes, and typography that speak your brand's language.</p>
+                        <a href="services.html" class="service-link">Learn More</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-hashtag"></i></div>
+                        <h3>Social Media</h3>
+                        <p class="text-muted">Engaging visuals and templates designed to boost your online presence.</p>
+                        <a href="services.html" class="service-link">Learn More</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+                        <h3>Print Design</h3>
+                        <p class="text-muted">Flyers, posters, and brochures that leave a lasting physical impression.</p>
+                        <a href="services.html" class="service-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Process</h2>
+                </div>
+                
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Discovery</h3>
+                        <p class="text-muted" style="font-size: 0.9rem;">Understanding your goals.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Concept</h3>
+                        <p class="text-muted" style="font-size: 0.9rem;">Exploring creative directions.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Design</h3>
+                        <p class="text-muted" style="font-size: 0.9rem;">Crafting the final look.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Delivery</h3>
+                        <p class="text-muted" style="font-size: 0.9rem;">Launch and support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>YCLONE</h3>
+                        <p class="text-muted">Minimalist design for modern brands.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 style="font-size: 1rem;">Menu</h4>
+                        <a href="index.html">Home</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="services.html">Services</a>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 style="font-size: 1rem;">Contact</h4>
+                        <a href="mailto:hello@yclone.design">hello@yclone.design</a>
+                        <a href="tel:+233505726505">+233 50 572 6505</a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    &copy; 2026 Yclone Design Studio. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/sidebar.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

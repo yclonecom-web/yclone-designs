@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Yclone Design Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery-bundle.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">YCLONE</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="btn-outline">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="hero-title">Design <span class="accent">Portfolio</span></h1>
+            <p class="hero-subtitle">A collection of projects that showcase my design philosophy and skills</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="quote">Quote Designs</button>
+                <button class="filter-btn" data-filter="flyer">Flyers & Posters</button>
+                <button class="filter-btn" data-filter="logo">Logo & Branding</button>
+                <button class="filter-btn" data-filter="print">Print Design</button>
+            </div>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="portfolio-search" placeholder="Search projects...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-meta">
+                <p class="project-count">Showing <span id="count">12</span> projects</p>
+                <div class="sort-controls">
+                    <select id="sort-projects">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="name">Project Name</option>
+                        <option value="featured">Featured</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="portfolio-grid" id="portfolio-container">
+                <!-- Projects will be loaded dynamically -->
+                
+                <!-- Example Project 1 -->
+                <div class="portfolio-item" data-category="social" data-tags="instagram facebook campaign">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/social-campaign.jpg" alt="Social Media Campaign">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="1">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Social Media</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Fitness Brand Social Campaign</h3>
+                        <p class="project-desc">Complete social media package for a fitness startup</p>
+                        <div class="project-tags">
+                            <span>Instagram</span>
+                            <span>Facebook</span>
+                            <span>Carousel</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 2 -->
+                <div class="portfolio-item" data-category="quote" data-tags="typography inspirational minimal">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/quote-design.jpg" alt="Quote Design Series">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="2">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Quote Design</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Inspirational Quote Series</h3>
+                        <p class="project-desc">Typography-focused designs for wellness app</p>
+                        <div class="project-tags">
+                            <span>Typography</span>
+                            <span>Minimal</span>
+                            <span>Digital Art</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 3 -->
+                <div class="portfolio-item" data-category="flyer" data-tags="event print marketing">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/event-flyer.jpg" alt="Event Flyer Design">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="3">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Flyer Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Music Festival Promo Kit</h3>
+                        <p class="project-desc">Complete event promotion package</p>
+                        <div class="project-tags">
+                            <span>Print Design</span>
+                            <span>Event</span>
+                            <span>Marketing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 4 -->
+                <div class="portfolio-item" data-category="logo" data-tags="branding identity">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/logo-branding.jpg" alt="Logo Design">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="4">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Logo Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Tech Startup Brand Identity</h3>
+                        <p class="project-desc">Complete branding for AI company</p>
+                        <div class="project-tags">
+                            <span>Branding</span>
+                            <span>Logo</span>
+                            <span>Identity</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 5 -->
+                <div class="portfolio-item" data-category="social" data-tags="twitter linkedin banner">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/banner-design.jpg" alt="Social Media Banners">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="5">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Social Media</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Professional Profile Banners</h3>
+                        <p class="project-desc">LinkedIn & Twitter headers for executives</p>
+                        <div class="project-tags">
+                            <span>LinkedIn</span>
+                            <span>Twitter</span>
+                            <span>Banners</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 6 -->
+                <div class="portfolio-item" data-category="print" data-tags="brochure corporate">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/brochure-design.jpg" alt="Corporate Brochure">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="6">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Print Design</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">Corporate Brochure Series</h3>
+                        <p class="project-desc">Annual report and marketing collateral</p>
+                        <div class="project-tags">
+                            <span>Brochure</span>
+                            <span>Corporate</span>
+                            <span>Print</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 7 -->
+                <div class="portfolio-item" data-category="flyer" data-tags="restaurant menu promotion">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/restaurant-flyer.jpg" alt="Restaurant Flyer">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="7">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Flyer Design</span>
+                            <span class="project-year">2022</span>
+                        </div>
+                        <h3 class="project-title">Restaurant Promo Materials</h3>
+                        <p class="project-desc">Menu redesign and promotional flyers</p>
+                        <div class="project-tags">
+                            <span>Restaurant</span>
+                            <span>Menu</span>
+                            <span>Promotion</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 8 -->
+                <div class="portfolio-item" data-category="logo" data-tags="minimal modern">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/logo-minimal.jpg" alt="Minimal Logo">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="8">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Logo Design</span>
+                            <span class="project-year">2022</span>
+                        </div>
+                        <h3 class="project-title">Minimalist Brand Identity</h3>
+                        <p class="project-desc">Clean logo for lifestyle brand</p>
+                        <div class="project-tags">
+                            <span>Minimal</span>
+                            <span>Modern</span>
+                            <span>Clean</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 9 -->
+                <div class="portfolio-item" data-category="quote" data-tags="motivational book">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/book-quotes.jpg" alt="Book Quote Designs">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="9">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Quote Design</span>
+                            <span class="project-year">2022</span>
+                        </div>
+                        <h3 class="project-title">Literary Quote Collection</h3>
+                        <p class="project-desc">Book-inspired typographic designs</p>
+                        <div class="project-tags">
+                            <span>Book</span>
+                            <span>Literature</span>
+                            <span>Typography</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 10 -->
+                <div class="portfolio-item" data-category="social" data-tags="instagram stories reels">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/instagram-kit.jpg" alt="Instagram Content Kit">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="10">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Social Media</span>
+                            <span class="project-year">2022</span>
+                        </div>
+                        <h3 class="project-title">Instagram Content Package</h3>
+                        <p class="project-desc">30-day content plan with templates</p>
+                        <div class="project-tags">
+                            <span>Instagram</span>
+                            <span>Stories</span>
+                            <span>Templates</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 11 -->
+                <div class="portfolio-item" data-category="print" data-tags="business cards stationery">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/business-cards.jpg" alt="Business Cards">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="11">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Print Design</span>
+                            <span class="project-year">2021</span>
+                        </div>
+                        <h3 class="project-title">Executive Stationery Set</h3>
+                        <p class="project-desc">Premium business cards and letterhead</p>
+                        <div class="project-tags">
+                            <span>Business Cards</span>
+                            <span>Stationery</span>
+                            <span>Premium</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Example Project 12 -->
+                <div class="portfolio-item" data-category="flyer" data-tags="workshop education">
+                    <div class="portfolio-image">
+                        <img src="assets/images/projects/workshop-flyer.jpg" alt="Workshop Flyer">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="view-btn" data-project="12">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="project-meta">
+                            <span class="project-category">Flyer Design</span>
+                            <span class="project-year">2021</span>
+                        </div>
+                        <h3 class="project-title">Educational Workshop Series</h3>
+                        <p class="project-desc">Promotional materials for training programs</p>
+                        <div class="project-tags">
+                            <span>Education</span>
+                            <span>Workshop</span>
+                            <span>Promotion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button id="load-more-btn" class="btn-outline">
+                    <i class="fas fa-plus"></i> Load More Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="project-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <div class="main-image">
+                        <img id="modal-main-img" src="" alt="">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <!-- Thumbnails will be added here -->
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <div class="modal-header">
+                        <div class="project-meta">
+                            <span class="project-category" id="modal-category">Category</span>
+                            <span class="project-year" id="modal-year">2024</span>
+                        </div>
+                        <h2 id="modal-title">Project Title</h2>
+                    </div>
+                    
+                    <div class="modal-description">
+                        <p id="modal-description">Project description will appear here.</p>
+                    </div>
+                    
+                    <div class="modal-details">
+                        <div class="detail-item">
+                            <h4>Client</h4>
+                            <p id="modal-client">Client Name</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Timeline</h4>
+                            <p id="modal-timeline">2 weeks</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Services</h4>
+                            <p id="modal-services">Design, Branding</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-tags" id="modal-tags">
+                        <!-- Tags will be added here -->
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <a href="#" class="btn-primary" id="project-link">View Project Details</a>
+                        <button class="btn-outline" id="share-project">
+                            <i class="fas fa-share-alt"></i> Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's collaborate to bring your vision to life</p>
+            <a href="contact.html" class="btn-primary">Start a Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>YCLONE</h3>
+                    <p>Visual Stories, Masterfully Crafted</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social-links">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/nti-isaac-aa5632368?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/yclone_designs?igsh=MWl3amVyYmVyMHYyaA==" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61571324127681" class="social-link"><i class="fab fa-facebook"></i></a>
+                        
+                        <a href="https://www.behance.net/ntiisaackwasi" class="social-link"><i class="fab fa-behance"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Yclone by Nti Isaac Kwasi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/lightgallery.umd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="module" src="js/portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Yclone Graphic Design Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">YCLONE</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active btn-outline">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="hero-title">Let's <span class="accent">Create</span> Together</h1>
+            <p class="hero-subtitle">Ready to bring your vision to life? Let's discuss your project</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2 class="section-title">Send a Message</h2>
+                    <p class="section-subtitle">Fill out the form below and I'll get back to you within 24 hours</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="you@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company / Organization</label>
+                            <input type="text" id="company" name="company" placeholder="Your company (optional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="social-media">Social Media Graphics</option>
+                                <option value="quote-designs">Quote Designs</option>
+                                <option value="flyers">Flyers & Posters</option>
+                                <option value="logos">Logo Design</option>
+                                <option value="branding">Complete Branding</option>
+                                <option value="other">Other (Specify in message)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Project Budget *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="" disabled selected>Select budget range</option>
+                                <option value="under-500">Under $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-3000">$1,000 - $3,000</option>
+                                <option value="3000-5000">$3,000 - $5,000</option>
+                                <option value="5000-plus">$5,000+</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline *</label>
+                            <select id="timeline" name="timeline" required>
+                                <option value="" disabled selected>Select timeline</option>
+                                <option value="urgent">Urgent (1-2 weeks)</option>
+                                <option value="standard">Standard (3-4 weeks)</option>
+                                <option value="flexible">Flexible (1-2 months)</option>
+                                <option value="planning">Just planning/exploring</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" required rows="6" placeholder="Tell me about your project, goals, target audience, and any specific requirements..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="file">Attach Files (Optional)</label>
+                            <div class="file-upload-area">
+                                <input type="file" id="file" name="file" accept=".jpg,.jpeg,.png,.pdf,.ai,.psd" multiple>
+                                <div class="upload-placeholder">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <p>Drag & drop files or <span>browse</span></p>
+                                    <small>Supports JPG, PNG, PDF, AI, PSD (Max 10MB each)</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to my design newsletter for tips and updates</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        
+                        <p class="form-note">* Required fields. Your information is secure and will never be shared.</p>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-sidebar">
+                    <!-- Contact Methods -->
+                    <div class="contact-methods">
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="section-subtitle">Multiple ways to reach me</p>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Email</h3>
+                                <p>hello@yclone.design</p>
+                                <small>Response within 24 hours</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Phone / WhatsApp</h3>
+                                <p>+233 50 572 6505</p>
+                                <small>Mon-Fri, 9AM-5PM GMT</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Location</h3>
+                                <p>Accra, Ghana</p>
+                                <small>Available for remote work worldwide</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Book a Call</h3>
+                                <p>Schedule a consultation</p>
+                                <a href="#" class="book-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Working Hours -->
+                    <div class="working-hours">
+                        <h3><i class="far fa-clock"></i> Working Hours</h3>
+                        <div class="hours-grid">
+                            <div class="hour-item">
+                                <span>Monday - Friday</span>
+                                <span>9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Saturday</span>
+                                <span>10:00 AM - 2:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="social-contact">
+                        <h3><i class="fas fa-share-alt"></i> Connect on Social</h3>
+                        <div class="social-buttons">
+                            <a href="https://www.linkedin.com/in/nti-isaac-aa5632368?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-btn linkedin">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/yclone_designs?igsh=MWl3amVyYmVyMHYyaA==" class="social-btn instagram">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61571324127681" class="social-btn facebook">
+                                <i class="fab fa-facebook"></i> Facebook
+                            </a>
+                           
+                            <a href="https://www.behance.net/ntiisaackwasi" class="social-btn behance">
+                                <i class="fab fa-behance"></i> Behance
+                            </a>
+                          
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Preview -->
+                    <div class="faq-preview">
+                        <h3><i class="far fa-question-circle"></i> Common Questions</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <h4>What's your typical turnaround time?</h4>
+                                <p>Most projects are completed within 2-4 weeks depending on complexity.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>Do you offer revisions?</h4>
+                                <p>Yes, I include 3 rounds of revisions in all projects.</p>
+                            </div>
+                            <a href="#" class="view-all-faq">View all FAQs <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Location & Service Area</h2>
+            <p class="section-subtitle">Based in Accra, serving clients worldwide</p>
+            
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Interactive Map</h3>
+                    <p>Location map would be integrated here</p>
+                    <small>Service areas: Worldwide (Remote)</small>
+                </div>
+                <div class="service-areas">
+                    <h4>Primary Service Areas:</h4>
+                    <div class="areas-grid">
+                        <div class="area-item">
+                            <i class="fas fa-city"></i>
+                            <span>Accra</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-globe-africa"></i>
+                            <span>West Africa</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-globe-americas"></i>
+                            <span>North America</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-globe-europe"></i>
+                            <span>Europe</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-globe-asia"></i>
+                            <span>Asia Pacific</span>
+                        </div>
+                        <div class="area-item">
+                            <i class="fas fa-wifi"></i>
+                            <span>Remote Worldwide</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Not Sure Where to Start?</h2>
+                <p>Download my free project planning guide to help clarify your vision</p>
+                <a href="#" class="btn-primary">
+                    <i class="fas fa-download"></i> Download Planning Guide
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>YCLONE</h3>
+                    <p>Visual Stories, Masterfully Crafted</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social-links">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/nti-isaac-aa5632368?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/yclone_designs?igsh=MWl3amVyYmVyMHYyaA==" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61571324127681" class="social-link"><i class="fab fa-facebook"></i></a>
+                        
+                        <a href="https://www.behance.net/ntiisaackwasi" class="social-link"><i class="fab fa-behance"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Yclone by Nti Isaac Kwasi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="contact-modal" id="success-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-icon success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll review your message and get back to you within 24 hours.</p>
+            <button class="btn-primary close-modal">Got It</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
