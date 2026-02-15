@@ -599,6 +599,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3rem;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .footer-brand h3 { color: var(--primary); margin-bottom: 0.5rem; }
