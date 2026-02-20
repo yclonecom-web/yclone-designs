@@ -23,226 +23,173 @@
 </head>
 <body>
 
-    <!-- Mobile Menu Toggle (Visible only on mobile) -->
-    <div class="mobile-menu-toggle" id="mobile-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-text">
+            <span>YCLONE</span>
+        </div>
     </div>
 
-    <!-- Overlay for Mobile Sidebar -->
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" id="menuToggle">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+    </div>
 
-    <!-- Minimal Sidebar Navigation -->
-    <aside class="sidebar-nav" id="sidebar">
-        <div class="sidebar-header">
-            <div class="sidebar-logo">
-                <h2 style="color: var(--primary); font-size: 1.5rem; margin:0;">YCLONE</h2>
-            </div>
-            <button class="sidebar-close" id="sidebar-close">
-                <i class="fas fa-times"></i>
-            </button>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="top-col">
+            <a href="index.html" class="logo">YCLONE.</a>
+            <span class="logo-sub">Visual Identity Studio</span>
         </div>
-
-        <div class="sidebar-profile">
-            <div class="profile-image">
-                <!-- Using placeholder if image missing, otherwise your asset -->
-                <img src="assets/images/designer2.png" onerror="this.src='https://via.placeholder.com/80?text=NK'" alt="Nti Isaac Kwasi">
-            </div>
-            <div class="profile-info">
-                <h3>Nti Isaac Kwasi</h3>
-                <p>Graphic Designer</p>
-            </div>
-        </div>
-
-        <nav class="sidebar-menu">
-            <ul class="nav-list">
-                <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="services.html" class="nav-link"><i class="fas fa-layer-group"></i> Services</a></li>
-                <li><a href="portfolio.html" class="nav-link"><i class="fas fa-image"></i> Portfolio</a></li>
-                <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active hover-trigger">Home</a></li>
+                <li><a href="about.html" class="hover-trigger">About</a></li>
+                <li><a href="services.html" class="hover-trigger">Services</a></li>
+                <li><a href="portfolio.html" class="hover-trigger">Work</a></li>
+                <li><a href="blog.html" class="hover-trigger">Journal</a></li>
+                <li><a href="contact.html" class="hover-trigger">Contact</a></li>
             </ul>
         </nav>
         
-        <div class="sidebar-footer">
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/nti-isaac-aa5632368?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/yclone_designs?igsh=MWl3amVyYmVyMHYyaA==" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.behance.net/ntiisaackwasi" class="social-icon"><i class="fab fa-behance"></i></a>
+        <div class="btm-col">
+            <p style="font-size: 0.8rem; color: #999; margin-bottom: 10px;">Follow</p>
+            <div style="display: flex; gap: 15px; font-size: 1.2rem;">
+                <a href="#" class="hover-trigger"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover-trigger"><i class="fab fa-behance"></i></a>
+                <a href="#" class="hover-trigger"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </aside>
 
-    <!-- Main Content Area -->
+    <!-- Main Content -->
     <main class="main-content">
         
-        <!-- Desktop Navbar -->
-        <nav class="top-navbar">
-            <div class="container">
-                <div class="nav-left">
-                    <button class="sidebar-toggle" id="desktop-toggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <a href="index.html" class="nav-logo">YCLONE</a>
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Background Shapes (Z-index 0) -->
+            <div class="shape shape-1" data-speed="-2"></div>
+            <div class="shape shape-2" data-speed="4"></div>
+            
+            <!-- Text Content (Z-index 10) -->
+            <div class="hero-text-wrapper">
+                <div class="hero-label">Nti Isaac Kwasi</div>
+                <h1 class="display-text">
+                    <span>Designing</span>
+                    <span>Boldness.</span>
+                </h1>
+                <p style="max-width: 500px; margin-bottom: 40px; font-size: 1.1rem; line-height: 1.8; color: #555;">
+                    A digital design studio crafting visual identities that cut through the noise. Specialized in high-impact typography and branding.
+                </p>
+                <a href="portfolio.html" class="magnetic-btn hover-trigger">Selected Works</a>
+            </div>
+        </section>
+
+        <!-- Scrolling Marquee -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span class="marquee-item">Brand Identity</span>
+                <span class="marquee-item filled">•</span>
+                <span class="marquee-item filled">Art Direction</span>
+                <span class="marquee-item filled">•</span>
+                <span class="marquee-item">Social Media</span>
+                <span class="marquee-item filled">•</span>
+                <span class="marquee-item filled">Logo Design</span>
+            </div>
+            <!-- Duplicate for seamless scroll -->
+            <div class="marquee-content">
+                <span class="marquee-item">Brand Identity</span>
+                <span class="marquee-item filled">•</span>
+                <span class="marquee-item filled">Art Direction</span>
+                <span class="marquee-item filled">•</span>
+                <span class="marquee-item">Social Media</span>
+                <span class="marquee-item filled">•</span>
+                <span class="marquee-item filled">Logo Design</span>
+            </div>
+        </div>
+
+        <!-- Selected Work -->
+        <section class="section-padding">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p style="color: #666;">A collection of brands transformed through strategic design.</p>
+            </div>
+            
+            <div class="work-grid">
+                <!-- Project 1 -->
+                <div class="work-item hover-trigger">
+                    <div class="work-image-wrapper">
+                        <!-- Placeholder image - Replace with your own -->
+                        <img src="https://i.ibb.co/nqjD13dz/20250429-130954.jpg" alt="Nexus Tech" class="work-image">
+                    </div>
+                    <div class="work-info">
+                        <div>
+                            <h3 class="work-title">Nexus Tech</h3>
+                            <p class="work-cat">Brand Identity</p>
+                        </div>
+                        <span class="work-year">24</span>
+                    </div>
                 </div>
-                <div class="nav-right">
-                    <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">
-                        Let's Talk
+
+                <!-- Project 2 -->
+                <div class="work-item hover-trigger">
+                    <div class="work-image-wrapper">
+                        <img src="https://i.ibb.co/CK8NktPS/Your-paragraph-text-20251013-142138-0000.png" alt="Vogue Cafe" class="work-image">
+                    </div>
+                    <div class="work-info">
+                        <div>
+                            <h3 class="work-title">Vogue Cafe</h3>
+                            <p class="work-cat">Social Media</p>
+                        </div>
+                        <span class="work-year">23</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 100px;">
+                <a href="portfolio.html" class="magnetic-btn hover-trigger">View Full Portfolio</a>
+            </div>
+        </section>
+
+        <!-- Services List -->
+        <section class="section-padding" style="background: #fafafa;">
+            <div class="container">
+                <h2 class="section-title" style="margin-bottom: 60px;">Expertise</h2>
+                
+                <div class="service-list">
+                    <a href="services.html" class="service-item hover-trigger">
+                        <span class="service-name">Visual Identity</span>
+                        <i class="fas fa-arrow-right service-icon"></i>
+                    </a>
+                    <a href="services.html" class="service-item hover-trigger">
+                        <span class="service-name">Social Media Kits</span>
+                        <i class="fas fa-arrow-right service-icon"></i>
+                    </a>
+                    <a href="services.html" class="service-item hover-trigger">
+                        <span class="service-name">Print & Packaging</span>
+                        <i class="fas fa-arrow-right service-icon"></i>
                     </a>
                 </div>
             </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <span class="hero-badge">Available for Projects</span>
-                    <h1 class="hero-title">Visual Stories, <span class="text-accent">Masterfully</span> Crafted</h1>
-                    <p class="hero-subtitle">
-                        Transforming complex ideas into compelling visual experiences. 
-                        Specializing in brand identity, social media, and digital art.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="portfolio.html" class="btn btn-primary">View My Work</a>
-                        <a href="contact.html" class="btn btn-outline">Contact Me</a>
-                    </div>
-                    
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <h3>30+</h3>
-                            <p>Projects</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>3+</h3>
-                            <p>Years</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero-image">
-                    <div class="image-container">
-                        <img src="assets/images/hero-design.jpg" onerror="this.src='https://via.placeholder.com/600x700/f8f9fa/cccccc?text=Hero+Image'" alt="Featured Design">
-                    </div>
-                    <!-- Floating Badge -->
-                    <div class="image-badge">
-                        <i class="fas fa-star"></i>
-                        <span>Top Rated Designer</span>
-                    </div>
-                </div>
-            </div>
         </section>
 
-        <!-- Featured Section -->
-        <section class="section-padding" id="featured">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Selected Works</h2>
-                    <p class="section-subtitle">A curated selection of my most recent design projects.</p>
-                </div>
-                
-                <!-- JS will populate this, or it will fall back to static -->
-                <div class="featured-grid" id="featured-projects"></div>
-                
-                <div style="text-align: center; margin-top: 3rem;">
-                    <a href="portfolio.html" class="btn btn-outline">View All Projects <i class="fas fa-arrow-right" style="margin-left: 5px; font-size: 0.8rem;"></i></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section class="section-padding" style="background-color: var(--bg-light);">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Expertise</h2>
-                    <p class="section-subtitle">Comprehensive design solutions tailored to your needs.</p>
-                </div>
-                
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-palette"></i></div>
-                        <h3>Brand Identity</h3>
-                        <p class="text-muted">Logo design, color palettes, and typography that speak your brand's language.</p>
-                        <a href="services.html" class="service-link">Learn More</a>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-hashtag"></i></div>
-                        <h3>Social Media</h3>
-                        <p class="text-muted">Engaging visuals and templates designed to boost your online presence.</p>
-                        <a href="services.html" class="service-link">Learn More</a>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-file-alt"></i></div>
-                        <h3>Print Design</h3>
-                        <p class="text-muted">Flyers, posters, and brochures that leave a lasting physical impression.</p>
-                        <a href="services.html" class="service-link">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Process Section -->
-        <section class="section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">The Process</h2>
-                </div>
-                
-                <div class="process-timeline">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <h3>Discovery</h3>
-                        <p class="text-muted" style="font-size: 0.9rem;">Understanding your goals.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <h3>Concept</h3>
-                        <p class="text-muted" style="font-size: 0.9rem;">Exploring creative directions.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <h3>Design</h3>
-                        <p class="text-muted" style="font-size: 0.9rem;">Crafting the final look.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">4</div>
-                        <h3>Delivery</h3>
-                        <p class="text-muted" style="font-size: 0.9rem;">Launch and support.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Footer -->
-        <footer>
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-brand">
-                        <h3>YCLONE</h3>
-                        <p class="text-muted">Minimalist design for modern brands.</p>
-                    </div>
-                    
-                    <div class="footer-links">
-                        <h4 style="font-size: 1rem;">Menu</h4>
-                        <a href="index.html">Home</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="services.html">Services</a>
-                    </div>
-                    
-                    <div class="footer-links">
-                        <h4 style="font-size: 1rem;">Contact</h4>
-                        <a href="mailto: ntiisaackwasi30@gmail.com">ntiisaackwasi30@gmail.com</a>
-                        <a href="tel:+233505726505">+233 50 572 6505</a>
-                    </div>
-                </div>
-                <div class="copyright">
-                    &copy; 2026 Yclone Design Studio. All rights reserved.
-                </div>
-            </div>
+        <!-- Footer -->
+        <footer class="footer-cta">
+            <h2 class="big-cta-text">Have an idea?</h2>
+            <a href="contact.html" class="magnetic-btn hover-trigger" style="background: white; color: black; border: none;">Start a Project</a>
         </footer>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Yclone Studio. All Rights Reserved.</p>
+            <p>Designed by Nti Isaac Kwasi</p>
+        </div>
     </main>
 
     <!-- Scripts -->
